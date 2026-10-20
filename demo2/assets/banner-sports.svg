@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="416" height="184" viewBox="0 0 416 184" role="img" aria-label="Flat illustration of cricket bat, ball and stadium">
+  <rect width="416" height="184" fill="#08584f"/>
+  <path d="M0 0h210L0 184Z" fill="#0c756b"/>
+  <path d="M0 132 143 0h55L9 184H0Z" fill="#158b79"/>
+  <circle cx="88" cy="100" r="80" fill="#11796c"/>
+  <circle cx="88" cy="100" r="60" fill="none" stroke="#41a996" stroke-width="3"/>
+  <path d="M0 168c69-32 141-31 209-3v19H0Z" fill="#21a077"/>
+  <path d="M24 151v20m8-23v23m8-24v24" stroke="#f4d894" stroke-width="4" stroke-linecap="round"/>
+  <g transform="translate(86 17) rotate(25 42 72)">
+    <rect x="17" y="0" width="49" height="104" rx="12" fill="#f0c483"/>
+    <rect x="23" y="6" width="37" height="91" rx="8" fill="#ffdfa6"/>
+    <path d="M41 104v59" stroke="#e8b676" stroke-width="14" stroke-linecap="round"/>
+    <path d="M41 117v36" stroke="#70583f" stroke-width="4" stroke-linecap="round"/>
+    <path d="M29 24h25m-25 10h25" stroke="#e7b66e" stroke-width="3"/>
+  </g>
+  <circle cx="51" cy="67" r="26" fill="#f8f2e1"/>
+  <path d="M36 46c18 9 27 26 29 44M28 54c18 9 27 23 30 39" fill="none" stroke="#d95948" stroke-width="2.5"/>
+  <path d="m170 34 3 7 7 3-7 3-3 7-3-7-7-3 7-3Z" fill="#f6ce68"/>
+  <circle cx="182" cy="116" r="5" fill="#f6ce68"/>
+</svg>
