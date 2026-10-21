@@ -11,6 +11,7 @@
 @media(max-width:375px){.wordmark{font-size:24px}.header-main{gap:2px}.icon-button{width:31px}.balance span{font-size:9px;padding:0 5px}.login-cta{font-size:9px;padding:0 7px}.category-tabs button{min-width:72px}.game-title{font-size:10px}.drawer-social button{width:35px}.drawer-social img{width:23px;height:23px}}
 .site-header{position:sticky;top:0;z-index:45}
 .sticky-stack{top:98px;z-index:40}
+.game-section{scroll-margin-top:156px}
 .promo-tabs{top:98px}
 .bets-viewport{height:256px;overflow:hidden}
 .bets-data{will-change:transform}
