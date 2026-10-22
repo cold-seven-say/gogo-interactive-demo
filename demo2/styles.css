@@ -105,6 +105,13 @@
 .contact-emails a{color:#28c6f2;font-size:13px;text-decoration:none}
 .contact-emails a:hover,.contact-emails a:focus-visible{text-decoration:underline}
 .content-body .contact-emails p{margin:3px 0 0;color:#a9c3d4;font-size:13px}
+body.content-mode #app{padding-bottom:0}
+.content-page{min-height:calc(100vh - 98px);min-height:calc(100dvh - 98px);display:flex;flex-direction:column}
+.content-page .page-title{min-height:54px;border-bottom:1px solid #ffffff26}
+.content-page .page-title h1{font-size:17px;font-weight:800}
+.content-page .content-body{flex:1;min-height:0;padding:24px 16px 38px}
+.content-page .content-body>p:first-child,.content-page .content-body>h2:first-child,.content-page .content-body>details:first-child{margin-top:0}
+.content-page .site-footer{flex:none;padding-bottom:24px}
 .login-screen{min-height:100vh;min-height:100dvh;background:radial-gradient(circle at 50% 5%,#0d7045 0,#075638 36%,#043b29 100%);display:flex;flex-direction:column}
 body.login-mode #app{padding-bottom:0}
 .login-topbar{height:74px;display:flex;align-items:center;justify-content:space-between;padding:16px clamp(16px,5vw,24px);flex:none}
