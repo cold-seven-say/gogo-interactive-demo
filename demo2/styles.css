@@ -399,9 +399,9 @@ body.profile-mode #app{padding-bottom:0}
 .profile-setting-dot{display:block;width:7px;height:7px;flex:0 0 7px;border-radius:50%;background:#ff4675}
 
 /* Account exit confirmation follows the existing bottom sheet surfaces. */
-.logout-sheet{position:fixed;bottom:0;left:50%;transform:translateX(-50%);z-index:70;width:min(100%,var(--page-width));padding:12px 20px calc(22px + env(safe-area-inset-bottom,0px));border-radius:16px 16px 0 0;background:#075132;box-shadow:0 -8px 30px #001a1566;animation:logout-sheet-enter 200ms ease-out}
-.logout-sheet h2{margin:18px 0 9px;text-align:center;font-size:21px}
-.logout-sheet p{margin:0 auto 24px;max-width:290px;color:#cfecda;text-align:center;font-size:13px;line-height:1.5}
+.logout-sheet{position:fixed;bottom:0;left:50%;transform:translateX(-50%);z-index:70;width:min(100%,var(--page-width));min-height:230px;max-height:100dvh;overflow-y:auto;padding:22px 20px calc(30px + env(safe-area-inset-bottom,0px));border-radius:16px 16px 0 0;background:#075132;box-shadow:0 -8px 30px #001a1566;animation:logout-sheet-enter 200ms ease-out}
+.logout-sheet h2{margin:22px 0 12px;text-align:center;font-size:21px}
+.logout-sheet p{margin:0 auto 30px;max-width:290px;color:#cfecda;text-align:center;font-size:13px;line-height:1.5}
 .logout-sheet-actions{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .logout-sheet-actions button{height:44px;border:1px solid #7fb797;border-radius:7px;background:transparent;color:#effff4;font-size:14px;font-weight:700}
 .logout-sheet-actions button:last-child{border-color:#ff711e;background:#ff711e;color:#fff}
