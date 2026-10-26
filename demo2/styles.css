@@ -390,3 +390,10 @@ body:not(:has(.download-bar)) .activity-launcher{bottom:var(--nav-height)}
 .activity-launcher .activity-fab-arrow{height:21px;display:grid;place-items:center}
 .activity-launcher .activity-fab>span:last-child{font-size:8px;line-height:11px;font-weight:700}
 @media(max-width:360px){.download-bar{gap:6px;padding-left:8px;padding-right:34px}.download-actions{gap:5px}.download-actions button{font-size:9px;padding:0 8px}}
+
+/* Editable identity and unfinished account settings. */
+.drawer-profile .drawer-avatar{position:relative;width:61px;height:61px;flex:0 0 61px;overflow:visible}
+.drawer-profile .avatar-edit-mark{position:absolute;right:-1px;bottom:-1px;width:21px;height:21px;min-width:0;display:grid;place-items:center;border:2px solid #073b29;border-radius:50%;background:#ffb52b;color:#173d2a}
+body.profile-mode #app{padding-bottom:0}
+.profile-page{min-height:calc(100dvh - 98px)}
+.profile-setting-dot{display:block;width:7px;height:7px;flex:0 0 7px;border-radius:50%;background:#ff4675}
