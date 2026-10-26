@@ -397,3 +397,20 @@ body:not(:has(.download-bar)) .activity-launcher{bottom:var(--nav-height)}
 body.profile-mode #app{padding-bottom:0}
 .profile-page{min-height:calc(100dvh - 98px)}
 .profile-setting-dot{display:block;width:7px;height:7px;flex:0 0 7px;border-radius:50%;background:#ff4675}
+
+/* Account exit confirmation follows the existing bottom sheet surfaces. */
+.logout-sheet{position:fixed;bottom:0;left:50%;transform:translateX(-50%);z-index:70;width:min(100%,var(--page-width));padding:12px 20px calc(22px + env(safe-area-inset-bottom,0px));border-radius:16px 16px 0 0;background:#075132;box-shadow:0 -8px 30px #001a1566;animation:logout-sheet-enter 200ms ease-out}
+.logout-sheet h2{margin:18px 0 9px;text-align:center;font-size:21px}
+.logout-sheet p{margin:0 auto 24px;max-width:290px;color:#cfecda;text-align:center;font-size:13px;line-height:1.5}
+.logout-sheet-actions{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.logout-sheet-actions button{height:44px;border:1px solid #7fb797;border-radius:7px;background:transparent;color:#effff4;font-size:14px;font-weight:700}
+.logout-sheet-actions button:last-child{border-color:#ff711e;background:#ff711e;color:#fff}
+@keyframes logout-sheet-enter{from{transform:translate(-50%,100%)}to{transform:translate(-50%,0)}}
+@media(prefers-reduced-motion:reduce){.logout-sheet{animation:none}}
+.transaction-tabs{grid-template-columns:repeat(5,minmax(0,1fr))}
+.transaction-tabs button{font-size:9px;letter-spacing:-.2px}
+.transaction-tabs button:last-child{font-size:8px;letter-spacing:-.35px}
+.transaction-dialog{max-height:calc(100dvh - 32px);overflow-y:auto}
+.transaction-dialog dl>.transaction-sports-details{display:block;padding-top:8px;margin-top:8px;border-top:1px solid #ffffff20;border-bottom:0}
+.transaction-dialog .transaction-sports-details>div{align-items:flex-start;padding:7px 0}
+.transaction-sports-details dd{max-width:65%;line-height:1.4}
