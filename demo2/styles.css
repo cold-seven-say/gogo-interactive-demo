@@ -140,6 +140,242 @@ body.login-mode #app{padding-bottom:0}
 .vip-grid .vip-levels{margin-top:2px}.vip-grid .vip-deposit{margin-top:7px;padding-right:1px}.vip-grid .vip-detail{position:absolute;right:7px;bottom:17px;color:#115db2;text-decoration:underline;font-size:9px}.vip-grid .vip-card i{position:absolute;left:7px;bottom:8px;width:68%;height:5px;margin:0;background:linear-gradient(90deg,#ff711d 0 50%,#a9b5bb 50%);border-radius:9px}
 .vip-grid .club-card{background:#080e0c;color:#fff;border-color:#263e34}.club-title{display:flex;align-items:baseline;justify-content:space-between;gap:2px;white-space:nowrap}.vip-grid .club-title b{font-size:12px;line-height:1.2}.vip-grid .club-title em{font-size:11px;color:#ffd087}.club-rule{display:block;height:1px;background:#3b413b;margin:16px 0 7px}.club-withdraw{display:flex;align-items:center;justify-content:flex-end;gap:1px;color:#c2c9c3;font-size:9px;white-space:nowrap}.vip-grid .club-card strong{text-align:right;font-size:12px;color:#ffab31;margin-top:2px}
 .vip-grid .vip-levels span,.vip-grid .vip-deposit span,.vip-grid .vip-detail,.vip-grid .club-title,.vip-grid .club-withdraw{margin-top:0}
+.vip-grid .vip-levels,.vip-grid .vip-deposit{display:none!important}
+.vip-grid .vip-card:after{content:'VIP progress';display:block;margin-top:15px;color:#4a5a62;font-size:9px}
+.vip-grid .vip-card i{left:9px;bottom:12px;width:76%;height:6px;background:linear-gradient(90deg,#ff5a20 0 72%,#afc0b7 72%)}
+.vip-grid .club-card{background:#063526;border-color:#2c8a62}
+.vip-grid .club-rule{margin:10px 0 8px;background:#3b8762}
+.vip-grid .club-withdraw{justify-content:flex-start;color:#b6cfbf}
+.vip-grid .club-card strong{margin-top:2px;font-size:12px}
 .fantasy-bets{min-height:0;padding-bottom:7px}.fantasy-viewport{height:210px;overflow:hidden}.fantasy-data{will-change:transform}.fantasy-row{border-bottom:1px solid #ffffff0b}.fantasy-data .fantasy-row:first-child{background:#ffffff0a}.fantasy-row .cricket-match{display:flex;align-items:center;gap:3px;min-width:0}.fantasy-row .cricket-match img{width:19px;height:19px;object-fit:contain;flex:none}.fantasy-row .cricket-match small{font-size:8px;color:#b7d9c6}.fantasy-row .cricket-match b{font-size:9px;color:#67dff1;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.fantasy-row span:nth-child(2){color:#d8e9df}.fantasy-head,.fantasy-row{grid-template-columns:minmax(0,1.5fr) minmax(0,1fr) minmax(0,.62fr)}
 body.gifts-mode #app{padding-bottom:0}.gifts-page{min-height:calc(100dvh - 98px);background:#046a38;display:flex;flex-direction:column}.gifts-page .page-title{border-bottom:1px solid #ffffff24}.gifts-intro{text-align:center;padding:36px 20px 13px}.gifts-symbol{width:60px;height:60px;display:grid;place-items:center;margin:0 auto 16px;background:#0b5034;border:1px solid #4bbd81;border-radius:17px;color:#ffd07b}.gifts-intro h2{font-size:20px;margin:0 0 8px}.gifts-intro p{font-size:12px;color:#c9e9d4;margin:0}.gift-form{margin:13px 16px;padding:20px 16px 22px;background:#075235;border:1px solid #3b9869;border-radius:12px}.gift-form label{font-size:12px;font-weight:800}.gift-form input{display:block;width:100%;height:48px;margin-top:10px;padding:0 12px;border:1px solid #83b99a;border-radius:7px;background:#f7fff8;color:#173e2b;font-size:14px}.gift-form p{font-size:11px;color:#b9dfc7;line-height:1.45;margin:10px 0 20px}.gift-confirm{width:100%;min-height:46px;border:0;border-radius:7px;background:#ff9d31;color:#372007;font-weight:900}.gifts-footnote{margin:auto 20px 28px;text-align:center;font-size:10px;color:#a8d4b8}
 @media(max-width:360px){.vip-grid button{height:100px}.vip-grid .club-title b{font-size:10px}.vip-grid .club-title em{font-size:10px}.fantasy-row .cricket-match b{font-size:8px}}
+
+/* Local revision: open Bets layout, compact prototype cards, and flat 18+ badge */
+.bets-table,.fantasy-bets{background:transparent;border:0;border-radius:0;margin-top:8px;padding-left:0;padding-right:0}
+.bets-viewport,.fantasy-viewport{height:256px}
+.bets-row,.fantasy-row{height:32px;border-bottom:1px solid #ffffff18}
+.bets-row.table-head,.fantasy-head{height:32px;border-bottom:1px solid #ffffff2b;color:#b8d8c9}
+.fantasy-bets .fantasy-row{background:transparent!important}
+.vip-grid button{height:87px;padding:9px;border-radius:7px}
+.vip-grid .vip-card{background:#e7f5eb;color:#073622;border-color:#376a51}
+.vip-card-top{height:auto;display:block}.vip-grid .vip-card-top b{font-size:13px}.vip-medal,.vip-levels,.vip-deposit,.vip-detail{display:none!important}
+.vip-grid .vip-card:after{content:'VIP progress';display:block;margin-top:10px;font-size:9px;color:#073622}
+.vip-grid .vip-card i{left:9px;bottom:10px;width:70%;height:5px;background:linear-gradient(90deg,#ff661c 70%,#b9c9c0 70%)}
+.vip-grid .club-card{background:#0b342a;color:#fff;border-color:#376a51}.vip-grid .club-title b{font-size:13px}.vip-grid .club-title em{font-size:10px}.club-rule,.club-withdraw{display:none}.vip-grid .club-card:after{content:'Withdrawable';display:block;margin-top:10px;color:#c9ded0;font-size:9px}.vip-grid .club-card strong{margin-top:4px;font-size:11px}
+.age-pill{width:120px;min-height:46px;gap:8px;padding:5px 9px;background:#0a5a3b;border:1px solid #4aa473;border-radius:7px;box-shadow:none;color:#eafff0}.age-pill span{font-size:9px;line-height:1.1}.age-pill b{width:34px;height:34px;border:0;background:#ff9f2f;color:#173d2a;font-size:16px}.age-pill b:after{top:-7px;right:-5px;background:#0a5a3b;color:#ffbe49;font-size:11px}
+.gifts-page{background:radial-gradient(circle at 50% 0,#0b7045 0,#046a38 42%,#003b1e 100%)}.gifts-intro{padding-top:48px}.gift-form{background:transparent;border:0;padding:18px 16px 22px;margin-top:6px}.gift-form input{background:#063c29;border-color:#70b98c;color:#f2fff7}.gift-form input::placeholder{color:#9fc8ad}.gift-form p{color:#b8dfc6}.gift-confirm{background:#ff9e2f}
+.bets-section .segmented{height:37px;padding:0;border-radius:0;background:transparent;border-bottom:1px solid #ffffff32;gap:6px}
+.bets-section .segmented button{position:relative;border-radius:0;color:#b9d9c7;font-size:11px}
+.bets-section .segmented button.active{background:transparent;color:#fff}
+.bets-section .segmented button.active:after{content:'';position:absolute;left:20%;right:20%;bottom:-1px;height:2px;background:#ffae2d;border-radius:2px}
+
+/* Notifications and Transactions: compact, touch-friendly secondary pages */
+.account-page{min-height:calc(100dvh - 98px);padding-bottom:28px;background:var(--green)}
+.account-page .page-title{border-bottom:1px solid #ffffff24}
+.account-intro{padding:18px 14px 8px}.account-intro small{font-size:9px;letter-spacing:.14em;color:#9aeac0;font-weight:800}.account-intro p{margin:5px 0 0;color:#c6e7d2;font-size:11px}
+.transaction-tabs{display:flex;gap:7px;padding:11px 9px 12px;overflow-x:auto;scrollbar-width:none;background:#003b1e}.transaction-tabs::-webkit-scrollbar{display:none}.transaction-tabs button{height:32px;flex:1;min-width:67px;padding:0 8px;border:1px solid #327752;border-radius:18px;background:#0a5537;color:#c7e5d3;font-size:10px;font-weight:800}.transaction-tabs button.active{border-color:#ffb43b;background:#ffad2d;color:#173d29}
+.transactions-head,.transaction-row{display:grid;grid-template-columns:1.18fr 1fr .8fr 1fr;gap:5px;align-items:center}.transactions-head{height:32px;padding:0 10px;background:#07502f;color:#b9ddc8;font-size:8px;font-weight:800}.transaction-row{width:100%;min-height:58px;padding:8px 10px;border:0;border-bottom:1px solid #ffffff12;background:#0a432d;color:#f2fff7;text-align:left}.transaction-row:nth-child(even){background:#083d29}.transaction-date{font-size:9px;line-height:1.25;color:#d0eadb}.transaction-method{min-width:0}.transaction-method b,.transaction-method small{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.transaction-method b{font-size:10px}.transaction-method small{margin-top:3px;color:#8fd1aa;font-size:8px}.transaction-row strong{font-size:10px;color:#ffab34;white-space:nowrap}.transaction-row strong.positive{color:#58e28a}.transaction-status{display:flex;align-items:center;justify-content:flex-end;gap:1px;color:#8ee69f;font-size:8px;white-space:nowrap}.transaction-status.pending{color:#ffbf56}.account-demo-note{margin:19px 15px 0;text-align:center;color:#9ecab0;font-size:10px}
+.transaction-dialog{position:relative;width:min(calc(100% - 32px),380px);padding:20px 16px 16px;background:#0a3426;border:1px solid #4b9f71;border-radius:13px;box-shadow:0 18px 45px #0009}.transaction-dialog-x{position:absolute;right:5px;top:4px;width:38px;height:38px;border:0;background:none;color:#d8f2e2}.transaction-dialog h2{margin:0 0 17px;color:#ffbd44;font-size:19px}.transaction-dialog dl{margin:0}.transaction-dialog dl div{display:flex;justify-content:space-between;gap:12px;min-height:30px;border-bottom:1px solid #ffffff12;align-items:center}.transaction-dialog dt{font-size:11px;color:#a7cdb7}.transaction-dialog dd{margin:0;text-align:right;color:#f5fff8;font-size:11px}.transaction-dialog dd.pending{color:#ffc157}.transaction-dialog dd button{height:28px;margin-left:4px;border:0;background:none;color:#ffbf4b;padding:0}.transaction-dialog p{margin:14px 0 0;color:#98c3aa;text-align:center;font-size:10px}.transaction-ok{width:100%;height:42px;margin-top:15px;border:0;border-radius:22px;background:#ffae27;color:#173c29;font-weight:900}
+.mail-hero{display:flex;align-items:center;gap:12px;margin:14px 10px 9px;padding:14px;border:1px solid #277c52;border-radius:10px;background:linear-gradient(115deg,#0a5a3b,#0d7146)}.mail-hero>span{width:49px;height:49px;display:grid;place-items:center;border-radius:13px;background:#083c2a;color:#ffd27b}.mail-hero small{font-size:9px;letter-spacing:.12em;color:#a3f0bd;font-weight:800}.mail-hero h2{margin:3px 0 1px;font-size:17px}.mail-hero p{margin:0;color:#c9ead5;font-size:10px}.mail-list{display:grid;gap:7px;padding:4px 9px}.mail-card{position:relative;display:flex;align-items:center;gap:9px;width:100%;min-height:76px;padding:10px 8px;border:1px solid #307c53;border-radius:8px;background:#0b5035;color:#fff;text-align:left}.mail-card.is-read{background:#083e2c;border-color:#246442}.mail-icon{width:40px;height:40px;display:grid;place-items:center;flex:none;border-radius:9px;background:#dcefe1;color:#0a5637}.mail-card.is-read .mail-icon{background:#124734;color:#8db69f}.mail-copy{min-width:0;flex:1}.mail-copy b,.mail-copy>span,.mail-copy small{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.mail-copy b{font-size:12px}.mail-copy>span{margin-top:3px;color:#b9dfca;font-size:10px}.mail-copy small{display:flex;align-items:center;gap:3px;margin-top:6px;color:#8fbba0;font-size:8px}.mail-card>svg{color:#9fe9ba}.mail-unread{position:absolute;right:7px;top:7px;width:7px;height:7px;border-radius:50%;background:#ffb538;box-shadow:0 0 0 3px #ffb53822}.mail-actions{position:fixed;left:50%;bottom:0;z-index:35;transform:translateX(-50%);display:flex;gap:8px;width:min(100%,var(--page-width));padding:10px 12px;background:#003b1e;border-top:1px solid #ffffff1a}.mail-actions button{height:42px;flex:1;border:1px solid #367b54;border-radius:7px;background:#0b5236;color:#d5f1df;font-size:11px;font-weight:800}.mail-actions button:last-child{border-color:#ffb63d;background:#ffad2d;color:#193e2a}.mail-actions button:disabled{opacity:.65}.mail-empty{padding:45px 20px;text-align:center;color:#a9d0b8;font-size:12px}
+.mail-detail-page{padding-bottom:28px}.mail-detail{margin:14px 10px;padding:16px 13px 22px;border:1px solid #2e8457;border-radius:10px;background:#0a4a31}.mail-detail-heading{display:flex;align-items:flex-start;gap:10px;padding-bottom:13px;border-bottom:1px solid #ffffff1a}.mail-detail-icon{width:43px;height:43px;display:grid;place-items:center;flex:none;border-radius:10px;background:#dff2e3;color:#0b5838}.mail-detail-heading small{color:#a4ecc0;font-size:9px;letter-spacing:.1em;font-weight:800}.mail-detail-heading h2{margin:3px 0 2px;font-size:17px}.mail-detail-heading time{color:#98c5a8;font-size:9px}.mail-detail>p{color:#d0ead8;font-size:12px;line-height:1.6}.mail-feature{margin:16px 0 11px;border-radius:8px;overflow:hidden;background:#0a3828}.mail-feature img{width:100%;height:132px;object-fit:cover}.mail-feature span{display:block;padding:7px 9px;color:#b9dfc9;font-size:9px}.mail-attachment{display:flex;align-items:center;gap:9px;padding:10px;border-radius:7px;background:#083e2a;color:#fff}.mail-attachment>span{color:#ffc04b}.mail-attachment b,.mail-attachment small{display:block}.mail-attachment b{font-size:11px}.mail-attachment small{margin-top:2px;color:#a8d5b5;font-size:9px}.mail-expiry{text-align:center;color:#99c9aa!important;font-size:10px!important}
+
+/* Personal center reference alignment */
+.drawer-balance div button{display:flex;align-items:center;justify-content:center;gap:7px}
+.drawer-balance div button svg{width:16px;height:16px}
+.notification-dot{width:8px;height:8px;flex:none;margin-left:auto;margin-right:2px;border-radius:50%;background:#ff4675;box-shadow:0 0 0 2px #ff467522}
+.drawer-links button:has(.notification-dot) svg{color:#a5e7c2}
+
+/* Demo2 account and lobby refinements */
+.bets-section .segmented{height:38px;padding:3px;gap:3px;border:1px solid #2f8056;border-radius:7px;background:#08472f}
+.bets-section .segmented button{border-radius:5px;background:#0c5a3b;color:#c7e9d3;font-size:11px}
+.bets-section .segmented button.active{background:#f1fff5;color:#06472e}
+.bets-section .segmented button.active:after{content:none}
+.bets-row,.fantasy-row{grid-template-columns:minmax(0,1.5fr) minmax(0,1fr) minmax(0,.74fr);gap:6px;border-bottom:0}
+.bets-row.table-head,.fantasy-head{grid-template-columns:minmax(0,1.5fr) minmax(0,1fr) minmax(0,.74fr);height:32px;padding:0;border-bottom:1px solid #ffffff2b;font-size:10px}
+.bets-row strong,.fantasy-row strong{display:flex;align-items:center;justify-content:flex-end;gap:4px;white-space:nowrap}
+.bets-row .flag-india{display:inline-block;flex:none}
+.fantasy-bets .fantasy-row{background:transparent!important}
+.fantasy-bets .fantasy-data .fantasy-row:first-child,.bets-data .bets-row:first-child{background:#ffffff12!important;border-radius:4px}
+.fantasy-row .cricket-match{min-width:0}
+.fantasy-row .cricket-match img{width:17px;height:17px}
+.fantasy-row .cricket-match b{font-size:8px}
+.age-pill{width:min(100%,250px);min-height:64px;gap:13px;padding:8px 12px 8px 16px;background:#1e2933;border:2px solid #84918c;border-radius:13px;box-shadow:none;color:#fff}
+.age-pill span{font-size:16px;line-height:1.13;letter-spacing:.005em}
+.age-pill b{width:48px;height:48px;border:3px solid #f1fff5;background:transparent;color:#fff;font-size:22px}
+.age-pill b:after{top:-7px;right:-8px;padding:0 2px;background:#1e2933;color:#fff;font-size:17px}
+.notifications-page .mail-list{padding-top:14px}
+.mail-card{min-height:72px}
+.mail-copy .mail-reward{display:flex;align-items:center;gap:6px;color:#bfdfca;font-size:10px}
+.mail-copy .mail-reward strong{color:#ffcb69;font-size:12px}
+.mail-reward-feature{display:flex;flex-direction:column;align-items:center;gap:5px;margin:17px 0;padding:17px 12px;border:1px solid #f4b847;border-radius:10px;background:linear-gradient(120deg,#185538,#0b3f2d);text-align:center}
+.mail-reward-feature span{display:flex;align-items:center;gap:6px;color:#ffda81;font-size:10px;font-weight:800;letter-spacing:.08em}
+.mail-reward-feature strong{color:#fff2c3;font-size:34px;line-height:1.2}
+.mail-reward-feature small{color:#b9d9c6;font-size:9px}
+.transaction-controls{display:flex;align-items:center;gap:5px;padding:10px 8px;background:#003b1e}
+.transaction-tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;flex:1;min-width:0;padding:0;background:none;overflow:visible}
+.transaction-tabs button{min-width:0;height:30px;padding:0 3px;border-radius:16px;font-size:9px}
+.transaction-calendar{display:grid;place-items:center;flex:none;width:32px;height:32px;padding:0;border:1px solid #327752;border-radius:7px;background:#0a5537;color:#e7fff0}
+.transaction-calendar.active{border-color:#ffb43b;color:#ffcf72}
+.transaction-date-panel{margin:0 8px 9px;padding:12px;border:1px solid #3c9361;border-radius:8px;background:#074c31}
+.transaction-date-panel[hidden]{display:none}
+.transaction-date-fields{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.transaction-date-fields label{font-size:10px;color:#bfdfca;font-weight:700}
+.transaction-date-fields input{display:block;width:100%;height:35px;margin-top:5px;padding:0 5px;border:1px solid #6aa980;border-radius:5px;background:#f4fff7;color:#173f2b;font-size:11px}
+.transaction-date-panel p{margin:9px 0;color:#b1d6be;font-size:9px}
+.transaction-date-actions{display:flex;justify-content:flex-end;gap:7px}
+.transaction-date-actions button{min-width:68px;height:29px;border:1px solid #4e9d6e;border-radius:5px;background:#0b6240;color:white;font-size:10px;font-weight:800}
+.transaction-date-actions button:last-child{border-color:#ffb33e;background:#ffae31;color:#193e2a}
+.transaction-date-summary{display:flex;align-items:center;justify-content:space-between;padding:4px 10px;background:#07502f;color:#c9e9d2;font-size:10px}
+.transaction-date-summary button{border:0;background:transparent;color:#ffd27a;font-size:19px}
+.transactions-head,.transaction-row{grid-template-columns:minmax(0,1.28fr) minmax(0,1fr) minmax(0,.78fr);gap:7px}
+.transactions-head{height:34px;font-size:9px}
+.transactions-head span:last-child{text-align:right}
+.transaction-row{min-height:64px;padding:8px 10px}
+.transaction-method b{font-size:11px}
+.transaction-method small{margin-top:4px;color:#96c6a7;font-size:8px}
+.transaction-amount{min-width:0}
+.transaction-amount strong,.transaction-amount small{display:block;white-space:nowrap}
+.transaction-amount strong{font-size:10px;color:#ffab34}
+.transaction-amount strong.positive{color:#58e28a}
+.transaction-amount small{margin-top:3px;color:#ffcd7e;font-size:9px}
+.transaction-status{font-size:9px}
+.transaction-status.processing,.transaction-dialog dd.processing{color:#ffbf56}
+.transaction-status.rejected,.transaction-dialog dd.rejected{color:#ff837d}
+.transaction-dialog dd.bonus{color:#ffce7c}
+.transaction-reason{margin-top:13px;padding:10px 11px;border:1px solid #a45d58;border-radius:7px;background:#5d2b2a66}
+.transaction-reason b{color:#ffc2b8;font-size:11px}
+.transaction-reason p{margin:5px 0 0;text-align:left;color:#f3d5d0;font-size:10px;line-height:1.45}
+.transactions-empty{padding:28px 10px;text-align:center;color:#bad6c2;font-size:11px}
+@media(max-width:360px){.transaction-tabs button{font-size:8px}.transaction-calendar{width:30px}.age-pill{width:230px}.age-pill span{font-size:15px}}
+
+/* Bets keep one stable content window while switching tabs. */
+.bets-content-window{height:326px;overflow:hidden}
+.bets-content-window>.bets-table,.bets-content-window>.fantasy-bets,.bets-content-window>.race-preview{height:326px;margin-top:8px}
+.bets-content-window .bets-viewport,.bets-content-window .fantasy-viewport{height:256px}
+.race-bets-preview{padding:0 8px 7px;background:transparent;border:0;border-radius:0;color:#eff5ff}
+.race-bets-preview .race-preview-head{height:36px;padding:0 0;background:transparent;border-bottom:1px solid #ffffff20;grid-template-columns:1.45fr 1.1fr 1fr;color:#b8d8c9;font-size:9px;font-weight:400}
+.race-bet-row{height:42px;display:grid;grid-template-columns:1.45fr 1.1fr 1fr;align-items:center;gap:4px;border-bottom:0;font-size:10px}
+.race-bet-row strong{font-size:10px;text-align:right;white-space:nowrap}.race-bet-row .flag-india{display:inline-block;margin-left:2px;vertical-align:middle}
+.race-rank{color:#d9e4f7;font-weight:800}.race-rank.top{display:grid;place-items:center;color:#ffd764}.race-bets-preview .outline-cta{margin:8px auto 0;width:100%;background:transparent;border:0;color:#18bfff;height:30px}
+.age-pill{width:166px;min-height:50px;gap:8px;padding:6px 9px 6px 11px;border:1px solid #83908f;border-radius:7px;background:#1d2531;color:#f5f8ff}
+.age-pill span{font-size:12px;line-height:1.28}.age-pill b{width:35px;height:35px;border:2px solid #f8fbff;background:transparent;font-size:16px}.age-pill b:after{top:-6px;right:-6px;background:#1d2531;font-size:12px}
+.mail-card{padding:9px 8px;min-height:78px}.mail-copy{display:grid;grid-template-columns:1fr auto;grid-template-rows:auto auto;column-gap:6px;align-items:center}.mail-copy b{grid-column:1/-1}.mail-copy .mail-reward{grid-column:1;display:flex;align-items:center;gap:4px;white-space:nowrap}.mail-copy .mail-reward strong{color:#ffd168}.mail-copy small{grid-column:2;grid-row:2;justify-content:flex-end;margin-top:0;white-space:nowrap}.mail-reward-icons{display:flex;gap:7px;margin-top:5px}.mail-reward-item{display:flex;align-items:center;gap:3px;padding:3px 5px;border-radius:5px;background:#083b2b;color:#ffd36c;font-size:10px;font-weight:800}.mail-reward-item svg{color:#ffcf62}.mail-reward-feature{align-items:stretch;text-align:left}.mail-reward-feature .mail-reward-icons{margin:8px 0 0}.mail-reward-feature .mail-reward-item{background:#0a3a2c}
+
+.mail-banner{margin:14px 0 12px;border-radius:8px;overflow:hidden;background:#083d2d;border:1px solid #2d8d5d}.mail-banner img{width:100%;height:126px;object-fit:cover}.mail-banner>div{padding:9px 10px}.mail-banner b,.mail-banner small{display:block}.mail-banner b{color:#fff;font-size:14px}.mail-banner small{margin-top:4px;color:#b8ddc7;font-size:10px}
+.drawer-balance div button{font-size:11px;justify-content:center;text-align:center;position:relative;padding-left:22px}.drawer-balance div button svg{position:absolute;left:10px;width:17px;height:17px}.vip-grid .vip-card-top,.vip-grid .club-title{height:30px;align-items:center}.vip-grid .vip-card-top b,.vip-grid .club-title b{font-size:14px}.vip-grid .club-title em{font-size:11px}.vip-grid .club-card strong{font-size:14px}.vip-medal{width:28px;height:28px;font-size:9px}.age-pill{width:150px;min-height:46px;gap:7px;padding:5px 8px}.age-pill span{font-size:10px}.age-pill b{width:32px;height:32px;font-size:15px}.site-footer .age-pill{margin-bottom:25px}.footer-social{margin-top:25px;margin-bottom:22px}
+
+/* Activities launcher: anchored above the download prompt or bottom navigation. */
+.activity-launcher{position:fixed;right:max(7px,calc((100vw - var(--page-width))/2 + 7px));bottom:calc(var(--nav-height) + 62px);z-index:42;display:flex;flex-direction:column;align-items:flex-end;gap:8px}
+.activity-fab{position:static;width:62px;height:48px;border:1px solid #ffd879;border-radius:10px;background:#ffb52b;color:#134726;box-shadow:0 3px 10px #00170f80;display:flex;align-items:center;justify-content:center;gap:3px;flex-direction:column}
+.activity-fab-arrow{height:18px;display:grid;place-items:center}.activity-fab>span:last-child{font-size:8px;font-weight:900}
+.activity-panel{width:226px;padding:9px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;background:#063b29;border:1px solid #4aa473;border-radius:10px;box-shadow:0 5px 18px #00170fcc}
+.activity-item{min-height:54px;border:1px solid #2d8056;border-radius:7px;background:#0b5136;color:#effff4;display:flex;align-items:center;gap:7px;padding:6px;text-align:left;font-size:9px;font-weight:800}
+.activity-item-icon{width:29px;height:29px;display:grid;place-items:center;flex:none;border-radius:50%;background:#ffab32;color:#173d2a}
+.download-bar{z-index:40}.bottom-nav{z-index:35}
+
+/* Final prototype alignment: personal center cards, open Race table, and activity stack. */
+.vip-grid button{height:102px;padding:9px 10px}
+.vip-grid .vip-card{background:#e7efec;color:#183c31;border-color:#b7c9c2}
+.vip-grid .vip-card-top{display:flex;height:31px;align-items:flex-start;justify-content:space-between}
+.vip-grid .vip-card-top b{font-size:15px;line-height:1}
+.vip-grid .vip-medal{display:grid!important;width:30px;height:30px;margin:-2px -1px 0 0;border-radius:50%;place-items:center;background:#ff7025;color:#fff;border:2px solid #ffc05b;font-size:10px;font-weight:900;box-shadow:0 0 0 2px #d4e0d9}
+.vip-grid .vip-levels,.vip-grid .vip-deposit{display:none!important}
+.vip-grid .vip-card:after{content:'VIP progress';display:block;margin-top:14px;color:#6c8178;font-size:10px}
+.vip-grid .vip-card i{left:10px;bottom:10px;width:72%;height:7px;background:linear-gradient(90deg,#ff5c24 0 70%,#b8c9c0 70%);border-radius:9px}
+.vip-grid .club-card{background:#073b2b;color:#fff;border-color:#2b7659}
+.vip-grid .club-title{display:flex;height:31px;align-items:flex-start;justify-content:space-between}
+.vip-grid .club-title b{font-size:15px;line-height:1}.vip-grid .club-title em{font-size:12px;color:#ffbf3d;font-style:normal}
+.vip-grid .club-rule{display:block;height:2px;margin:7px 0 10px;background:#277452}
+.vip-grid .club-withdraw{display:flex;color:#b9d8c8;font-size:10px}.vip-grid .club-card strong{display:block;margin-top:4px;color:#ffb52f;text-align:right;font-size:15px}
+.bets-section .bets-row.table-head,.bets-section .fantasy-head{font-weight:400}
+body:not(:has(.download-bar)) .activity-launcher{bottom:calc(var(--nav-height) + 8px)}
+
+/* Fine alignment pass: shared Bets header rhythm and circular Activities launcher. */
+.bets-section .bets-content-window{padding-top:0}
+.bets-section .bets-table,.bets-section .fantasy-bets,.bets-section .race-preview{margin-top:8px}
+.bets-section .bets-row.table-head,.bets-section .fantasy-head,.bets-section .race-bets-preview .race-preview-head{height:32px;min-height:32px;display:grid;align-items:center;padding-top:0;padding-bottom:0;line-height:1}
+.bets-section .race-bets-preview .race-preview-head{margin:0;padding-left:0;padding-right:0}
+.bets-section .bets-row.table-head span,.bets-section .fantasy-head span,.bets-section .race-bets-preview .race-preview-head b{display:flex;align-items:center;height:100%;font-weight:400}
+.bets-section .race-bets-preview .race-preview-head b:nth-child(2),.bets-section .race-bets-preview .race-preview-head b:nth-child(3){justify-content:flex-end;text-align:right}
+.activity-launcher{bottom:calc(var(--nav-height) + 62px)}
+.activity-fab{width:50px;height:50px;border-radius:50%;gap:0;position:relative;padding:3px 0 2px}
+.activity-fab-arrow{height:18px;transform:rotate(-90deg)}
+.activity-fab[aria-expanded="true"] .activity-fab-arrow{transform:rotate(0deg)}
+.activity-fab>span:last-child{font-size:7px;line-height:1}
+.activity-coins{position:absolute;right:4px;top:4px;display:flex;align-items:center;gap:0;color:#8e4b05}
+.activity-coins b{font-size:9px;line-height:1;background:#ffd36a;border-radius:50%;width:13px;height:13px;display:grid;place-items:center}
+.activity-coins svg{color:#ffd36a;stroke:#8e4b05;background:#ffb52b;border-radius:50%;padding:1px}
+.activity-panel{margin-bottom:0}
+/* Keep the 18+ message breathable at narrow mobile widths. */
+.age-pill{width:182px;gap:10px;padding:7px 10px 7px 13px}
+.age-pill span{font-size:11px;line-height:1.35;white-space:normal}
+.age-pill b{width:36px;height:36px;font-size:16px}
+
+/* Final card micro-alignment against the supplied reference. */
+.vip-grid .vip-card-top,.vip-grid .club-title{padding-top:3px}
+.vip-grid .club-title em{font-weight:900}
+.vip-grid .club-rule{height:1px;background:#3f8064;opacity:.72;margin-top:8px}
+.vip-grid .vip-card:after{font-size:11px;margin-top:17px}
+
+/* Current reference corrections: rank text, card baselines, and right-side activity rail. */
+.race-bets-preview .race-player{display:flex;align-items:center;gap:3px;min-width:0}
+.race-bets-preview .race-rank{display:inline;min-width:14px;flex:none;color:#f4fff8;font-weight:700}
+.race-bets-preview .race-player b{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:700}
+.vip-grid .vip-card-top,.vip-grid .club-title{height:31px;padding-top:0;align-items:center}
+.vip-grid .vip-card-top b,.vip-grid .club-title b,.vip-grid .club-title em{line-height:1.1}
+.vip-grid .club-title{transform:translateY(3px)}
+.vip-grid .vip-card:after{margin-top:10px}
+.vip-grid .vip-card i{bottom:8px}
+.activity-launcher{right:max(4px,calc((100vw - var(--page-width))/2 + 4px));bottom:calc(var(--nav-height) + 62px);gap:0}
+body:not(:has(.download-bar)) .activity-launcher{bottom:var(--nav-height)}
+.activity-panel{width:66px;height:min(50dvh,400px);min-height:230px;padding:5px 3px 7px;display:flex;flex-direction:column;align-items:center;justify-content:space-around;gap:2px;background:#06432aeb;border:1px solid #3c906151;border-radius:10px 10px 0 0;box-shadow:0 0 10px #001a1260}
+.activity-collapse{height:34px;width:52px;flex:none;border:0;border-radius:7px;background:#155e3d;color:#dbf7e7;display:grid;place-items:center}
+.activity-collapse svg{transform:rotate(90deg)}
+.activity-item{width:56px;min-height:0;flex:1;max-height:65px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;border:0;border-radius:6px;background:transparent;text-align:center;padding:2px;color:#effff4;font-size:8px;line-height:1.05}
+.activity-item-icon{width:31px;height:31px}
+.activity-fab{margin-bottom:0}
+.activity-launcher.is-open{bottom:var(--nav-height)}
+
+/* Pin the activity control to the right edge at the exact top edge of the fixed bars. */
+.activity-launcher{position:fixed;left:auto;right:max(0px,calc((100vw - var(--page-width))/2));bottom:var(--nav-height);margin:0;transform:none;z-index:50;align-items:flex-end}
+.activity-launcher.has-download:not(.is-open){bottom:calc(var(--nav-height) + 62px)}
+.activity-launcher.no-download:not(.is-open){bottom:var(--nav-height)}
+.activity-launcher.is-open{bottom:var(--nav-height)}
+.activity-fab{margin:0;transform:none}
+
+/* Runtime anchor coordinates override legacy activity offsets. */
+.activity-launcher:not(.is-open){position:fixed}
+.activity-launcher.is-open{position:fixed}
+
+/* Activities final anchor: keep the launcher and its circular control in one fixed right-edge stack. */
+.activity-launcher{position:fixed;left:auto;right:0;bottom:var(--nav-height);z-index:50;display:flex;flex-direction:column;align-items:flex-end;gap:0;margin:0;transform:none}
+.activity-launcher.has-download:not(.is-open){bottom:calc(var(--nav-height) + 62px)}
+.activity-launcher.no-download:not(.is-open),.activity-launcher.is-open{bottom:var(--nav-height)}
+.activity-launcher .activity-fab{position:static;right:auto;bottom:auto;transform:none;margin:0;width:50px;height:50px;flex:none}
+.activity-launcher .activity-panel{position:static;right:auto;bottom:auto;transform:none;margin:0 0 0 auto}
+@media (prefers-reduced-motion: reduce){.activity-launcher *{transition:none!important;animation:none!important}}
+
+/* Unified Activities rail border treatment. */
+.activity-launcher{--activity-border:#2b7654}
+.activity-launcher .activity-panel{overflow:hidden;border:1px solid var(--activity-border);border-bottom:1px solid var(--activity-border);box-shadow:0 0 10px #001a1260}
+.activity-launcher .activity-collapse{border:1px solid var(--activity-border);background:#155e3d;box-shadow:none}
+.activity-launcher .activity-item{border:0}
+
+/* Final Activities polish: a quiet rail, a floating collapse control, and zero gap to the fixed bar. */
+.activity-launcher .activity-panel{overflow:visible;border:1px solid rgba(60,144,97,.16);border-radius:0;box-shadow:0 0 8px rgba(0,26,18,.28)}
+.activity-launcher .activity-collapse{position:absolute;right:0;top:-34px;width:100%;height:34px;border:0;background:rgba(6,67,42,.92);box-shadow:none;border-radius:3px 3px 0 0;color:#dbf7e7}
+.activity-launcher .activity-collapse svg{transform:rotate(90deg)}
+
+/* Personal center: narrower drawer and shared card header geometry. */
+.drawer{width:min(72vw,311px)}
+.drawer .vip-grid>button{display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;padding:10px 9px;height:102px}
+.drawer .vip-grid .vip-card-top,.drawer .vip-grid .club-title{display:flex;flex:none;align-items:center;justify-content:space-between;height:30px;margin:0;padding:0;transform:none}
+.drawer .vip-grid .vip-card-top b,.drawer .vip-grid .club-title b{margin:0;font-size:14px;line-height:18px;white-space:nowrap}
+.drawer .vip-grid .club-title em{margin:0;font-size:12px;line-height:18px;font-weight:600}
+.drawer .vip-grid .vip-medal{margin:0;width:27px;height:27px;flex:none}
+.drawer .vip-grid .vip-card:after{margin-top:11px;line-height:14px}
+.drawer .vip-grid .club-rule{flex:none;height:1px;margin:5px 0 7px;background:#3f8064;opacity:.55}
+.drawer .vip-grid .club-withdraw{margin:0;line-height:12px}
+.drawer .vip-grid .club-card strong{margin-top:3px;font-size:15px;line-height:18px;font-weight:600}
+.drawer .vip-grid .club-card:after{content:none}
