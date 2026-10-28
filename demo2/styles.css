@@ -408,6 +408,30 @@ body.profile-mode #app{padding-bottom:0}
 @keyframes logout-sheet-enter{from{transform:translate(-50%,100%)}to{transform:translate(-50%,0)}}
 @media(prefers-reduced-motion:reduce){.logout-sheet{animation:none}}
 .transaction-tabs{grid-template-columns:repeat(5,minmax(0,1fr))}
+
+/* Embedded sports experience has its own navigation, separate from the Gogo lobby. */
+body.sports-mode #app{--sports-nav-height:calc(68px + env(safe-area-inset-bottom,0px));padding-bottom:var(--sports-nav-height)}
+.sports-mode .cricket-page{min-height:calc(100dvh - 98px - var(--sports-nav-height));padding-bottom:24px}
+.sports-bottom-nav{position:fixed;left:50%;bottom:0;transform:translateX(-50%);z-index:35;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));width:min(100%,var(--page-width));height:var(--sports-nav-height);padding:0 4px env(safe-area-inset-bottom,0px);background:#fff;border-top:1px solid #e1e6ed;box-shadow:0 -2px 10px #16294108;color:#6e7f99}
+.sports-bottom-nav button{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;min-width:0;min-height:48px;border:0;background:transparent;color:inherit;font-size:12px;font-weight:400;line-height:16px;padding:7px 0}
+.sports-bottom-nav button span{white-space:nowrap}
+.sports-bottom-nav button.active{color:#e62b35}
+.sports-bottom-nav button:focus-visible{outline:2px solid #e62b35;outline-offset:-4px;border-radius:4px}
+.sports-bottom-nav button:active{background:#f5f7fa}
+.sports-tab-content{min-height:calc(100dvh - 152px - var(--sports-nav-height));padding:24px 16px;color:#192c42;background:#f5f7fa}
+.sports-tab-content h2{margin:0 0 6px;font-size:21px}
+.sports-tab-content>p{margin:0 0 22px;color:#5b6b80;font-size:13px}
+.sports-demo-card{padding:20px 16px;border:1px solid #dce3eb;border-radius:12px;background:#fff}
+.sports-demo-card small{font-size:10px;letter-spacing:.3px;color:#60718a}
+.sports-demo-card h3{margin:12px 0 16px;font-size:17px}
+.sports-demo-card p{color:#5b6b80;font-size:13px;line-height:1.6}
+.sports-choice{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.sports-choice button{min-height:44px;border:1px solid #aab8c8;border-radius:6px;background:#f8fafc;color:#263c55;font-weight:700}
+.sports-choice button[aria-pressed="true"]{border-color:#e62b35;background:#fff0f1;color:#d52430}
+.sports-inline-action{display:inline-flex;align-items:center;gap:4px;min-height:44px;padding:8px 0;border:0;background:transparent;color:#d52430;font-size:13px;font-weight:700}
+.sports-reward-card{text-align:center;padding-top:28px}
+.sports-reward-card>svg{width:44px;height:44px;color:#e62b35}
+@media(max-width:350px){.sports-bottom-nav button{font-size:11px}}
 .transaction-tabs button{font-size:9px;letter-spacing:-.2px}
 .transaction-tabs button:last-child{font-size:8px;letter-spacing:-.35px}
 .transaction-dialog{max-height:calc(100dvh - 32px);overflow-y:auto}
