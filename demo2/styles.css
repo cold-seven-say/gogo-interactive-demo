@@ -432,6 +432,9 @@ body.sports-mode #app{--sports-nav-height:calc(68px + env(safe-area-inset-bottom
 .sports-reward-card{text-align:center;padding-top:28px}
 .sports-reward-card>svg{width:44px;height:44px;color:#e62b35}
 @media(max-width:350px){.sports-bottom-nav button{font-size:11px}}
+
+/* The detail title scrolls away; categories stay below the persistent Gogo header. */
+.detail-filter{position:sticky;top:98px;z-index:40}
 .transaction-tabs button{font-size:9px;letter-spacing:-.2px}
 .transaction-tabs button:last-child{font-size:8px;letter-spacing:-.35px}
 .transaction-dialog{max-height:calc(100dvh - 32px);overflow-y:auto}
