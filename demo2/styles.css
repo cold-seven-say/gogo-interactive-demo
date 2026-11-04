@@ -112,6 +112,25 @@ body.content-mode #app{padding-bottom:0}
 .content-page .content-body{flex:1;min-height:0;padding:24px 16px 38px}
 .content-page .content-body>p:first-child,.content-page .content-body>h2:first-child,.content-page .content-body>details:first-child{margin-top:0}
 .content-page .site-footer{flex:none;padding-bottom:24px}
+.app-download-page{background:var(--green)}
+.app-download-content{background:#141923;color:#fff}
+.app-download-hero{position:relative;isolation:isolate;overflow:hidden;aspect-ratio:684/405;background:#061326}
+.app-download-hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center}
+.app-download-hero:after{content:"";position:absolute;inset:30% 0 0;background:linear-gradient(0deg,#0d1526 0%,#06132a66 42%,transparent 100%);z-index:0}
+.app-download-hero h2{position:absolute;z-index:1;inset:auto 3% 12%;margin:0;text-align:center;font-size:clamp(37px,10vw,55px);font-weight:1000;line-height:.96;letter-spacing:-.045em;text-shadow:0 3px 0 #174378,0 5px 12px #000b28}
+.app-download-hero h2 span{display:block;white-space:nowrap}
+.app-download-hero h2 span:first-child{color:#eef8ff}
+.app-download-hero h2 span:last-child{color:#48d9ff}
+.app-download-hero h2 em{font-style:normal;color:#42baff}
+.app-download-message{padding:25px 17px 34px;background:#1c2230;text-align:center}
+.app-download-message p{margin:0}
+.app-download-disclaimer{color:#aebbd0;font-size:clamp(14px,3.75vw,17px);line-height:1.48}
+.app-download-invite{color:#fff;font-size:clamp(17px,4.4vw,20px);line-height:1.42;font-weight:700;margin-top:22px!important}
+.app-download-cta{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:52px;margin-top:18px;border:0;border-radius:0;background:#2d70c4;color:#fff;font-size:clamp(16px,4.5vw,20px);font-weight:700}
+.app-download-cta svg{width:24px;height:24px}
+.app-download-requirement{color:#aebbd0;font-size:14px;line-height:1.4;margin-top:10px!important}
+.app-download-note{color:#9caac2;font-size:12px;line-height:1.4;margin-top:11px!important}
+.app-download-page .site-footer{margin-top:0}
 .login-screen{min-height:100vh;min-height:100dvh;background:radial-gradient(circle at 50% 5%,#0d7045 0,#075638 36%,#043b29 100%);display:flex;flex-direction:column}
 body.login-mode #app{padding-bottom:0}
 .login-topbar{height:74px;display:flex;align-items:center;justify-content:space-between;padding:16px clamp(16px,5vw,24px);flex:none}
