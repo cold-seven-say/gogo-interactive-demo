@@ -10,3 +10,7 @@
 - 明确称新项目或 Demo2：`gogo-interactive-demo2`
 
 该约定用于后续修改范围，不允许将 Demo2 改动自动写入 Demo1。
+
+## 本地单文件预览
+
+`index.html` 已内嵌 Demo2 的 CSS、JavaScript 和 105 张原有资源图片。直接打开该文件时，图片也会显示。编辑 `app.js`、`account-pages.js`、`styles.css` 或 `assets/` 后，在本目录运行 `python3 build_standalone.py` 更新单文件预览。素材原件仍保存在 `assets/`，构建脚本不会改动它们。
