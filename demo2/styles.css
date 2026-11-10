@@ -137,10 +137,9 @@ body.content-mode #app{padding-bottom:0}
 .app-download-note{color:#a9cbb6;font-size:11px;line-height:1.45;margin-top:11px!important}
 .app-download-page .site-footer{margin-top:0}
 @media(max-width:360px){.app-download-hero,.app-download-hero-copy{min-height:255px}.app-download-hero h2{font-size:37px}.app-download-meta span+span:before{display:none}}
-.community-page{background:#075638;min-height:100vh;min-height:100dvh}
-.community-page .page-title{height:46px;min-height:46px}
+.community-page{background:#075638;min-height:calc(100vh - 98px);min-height:calc(100dvh - 98px)}
 .community-content{background:#075638;color:#f4fff8;flex:1;display:flex;flex-direction:column}
-.community-hero{height:clamp(136px,23dvh,210px);position:relative;overflow:hidden;background:#075236}
+.community-hero{height:clamp(120px,18dvh,180px);position:relative;overflow:hidden;background:#075236}
 .community-hero-art{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .community-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#003c2bf0 0%,#003c2bb0 60%,transparent 100%)}
 .community-hero-copy{position:relative;z-index:1;max-width:310px;padding:14px 16px}
