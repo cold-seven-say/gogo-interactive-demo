@@ -60,6 +60,13 @@
 .day-options[hidden]{display:none}
 .day-options button{display:block;width:100%;height:36px;border:0;background:#fff;color:#173c29;padding:0 11px;text-align:left}
 .day-options button[aria-selected="true"],.day-options button:hover,.day-options button:focus-visible{background:#e4f3e9}
+.birthday-field-copy{min-width:0;display:flex;align-items:baseline;gap:8px}
+.birthday-field-label{color:#537463;font-size:11px;font-weight:700;line-height:1}
+.birthday-field-value{color:#173c29;font-size:16px;font-weight:700;line-height:1}
+.day-trigger .birthday-chevron{font-size:20px;line-height:1}
+.month-picker{position:relative;min-width:0}
+.month-picker .birthday-field-label{position:absolute;left:11px;top:16px;pointer-events:none;z-index:1}
+.birthday-selects .month-picker select{width:100%;padding-left:60px;font-size:16px;font-weight:700}
 .nickname-field{position:relative;margin-top:10px}
 .nickname-field input{margin-top:0;padding-right:45px}
 .nickname-field button{position:absolute;top:0;right:0;width:44px;height:44px;display:grid;place-items:center;border:0;background:transparent;color:#20382b}
