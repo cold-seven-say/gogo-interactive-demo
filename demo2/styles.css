@@ -647,3 +647,4 @@ body.sports-mode #app{--sports-nav-height:calc(68px + env(safe-area-inset-bottom
 .race-page>.race-view-tabs button{min-height:43px}
 .race-feature+.race-view-tabs+.race-content{padding-top:12px}
 @media(max-width:360px){.race-feature{margin-inline:9px;padding-inline:11px;min-height:142px}.race-feature-copy{padding-right:74px}.race-feature-copy>strong{font-size:27px}.race-feature-subtitle{font-size:10px}.race-feature-clock{right:8px;width:74px;height:74px}.race-feature-clock strong{font-size:10px}.race-page>.race-view-tabs{margin-inline:9px}}
+.race-page .page-title{position:sticky;top:98px;z-index:44;box-shadow:0 3px 10px #001b1659}
