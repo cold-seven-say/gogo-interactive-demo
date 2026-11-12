@@ -593,3 +593,57 @@ body.sports-mode #app{--sports-nav-height:calc(68px + env(safe-area-inset-bottom
 .transaction-date-sheet .transaction-date-actions{gap:10px;margin:10px 0 0;border:0}
 .transaction-date-sheet .transaction-date-actions button,.transaction-date-sheet .transaction-date-actions button:last-child{height:44px;min-height:44px;border:1px solid #5c9e76;border-radius:6px;background:#0b6240;color:#fff;font-size:13px;font-weight:800}
 .transaction-date-sheet .transaction-date-actions button:last-child{border-color:#ff711e;background:#ff711e;color:#fff}
+.race-page{min-height:calc(100vh - 98px);padding-bottom:24px;background:#08271e}
+.race-navigation{padding:14px 12px 0;background:#08271e}
+.race-period-tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;padding:4px;border:1px solid #2b7853;border-radius:10px;background:#06432e}
+.race-period-tabs button{min-height:42px;border:0;border-radius:7px;background:transparent;color:#bbd9ca;font-size:13px;font-weight:800}
+.race-period-tabs button.active{background:#f3fff7;color:#075138;box-shadow:0 2px 7px #001b1460}
+.race-view-tabs{display:grid;grid-template-columns:1fr 1fr 1.2fr;gap:4px;margin-top:10px;border-bottom:1px solid #347957}
+.race-view-tabs button{min-height:44px;padding:0 3px;border:0;border-bottom:3px solid transparent;background:transparent;color:#b8d5c6;font-size:12px;font-weight:700;white-space:nowrap}
+.race-view-tabs button.active{border-bottom-color:#ffb943;color:#fff}
+.race-content{padding:14px 12px 24px}
+.race-content .race-pool{height:auto;min-height:136px;padding:23px 14px;border:1px solid #377b59;border-radius:11px;background:radial-gradient(circle at 88% 18%,#2e8061,#0a5138 58%,#073625)}
+.race-content .race-pool small{color:#bfeacb;font-size:11px;font-weight:800;letter-spacing:.08em}
+.race-content .race-pool strong{font-size:32px;line-height:1.1;margin:9px 0 5px}
+.race-content .race-pool span{color:#d4e9d9}
+.race-panel{margin-top:14px;overflow:hidden;border:1px solid #2d7350;border-radius:10px;background:#0a3d2d}
+.race-panel:first-child{margin-top:0}
+.race-panel-heading{padding:15px 14px 12px}
+.race-eyebrow{color:#9ee2b3;font-size:10px;font-weight:800;letter-spacing:.08em}
+.race-panel-heading h2{margin:4px 0 3px;font-size:18px;line-height:1.2}
+.race-panel-heading p{margin:0;color:#bad7c6;font-size:11px}
+.race-table{overflow:hidden}
+.race-panel .race-preview-head{height:37px;background:#073423;color:#bce0ca;font-size:10px}
+.race-panel .race-preview-row{height:45px;font-size:10px}
+.race-panel .race-preview-row span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.race-panel .race-preview-row span:last-child{text-align:right}
+.race-panel .race-preview-head b:last-child{text-align:right}
+.race-prize-list{padding:0 10px 10px}
+.race-prize-item{display:grid;grid-template-columns:30px 1fr auto;align-items:center;gap:10px;min-height:48px;padding:6px 4px;border-top:1px solid #ffffff17;font-size:12px}
+.race-prize-rank{display:grid;place-items:center;width:27px;height:27px;border-radius:50%;background:#176446;color:#f7fff9;font-weight:800}
+.race-prize-item:first-child .race-prize-rank{background:#ffbd4c;color:#382500}
+.race-prize-item strong{color:#ffcd6a;font-size:13px}
+.race-page~.race-login{bottom:0}
+.race-page:has(+ .race-login){padding-bottom:92px}
+@media(max-width:360px){.race-navigation{padding-inline:9px}.race-content{padding-inline:9px}.race-view-tabs button{font-size:11px}.race-panel .race-preview-head,.race-panel .race-preview-row{grid-template-columns:.4fr 1.4fr 1fr 1fr;padding-inline:7px;font-size:9px}}
+.race-feature{position:relative;display:flex;align-items:center;min-height:154px;margin:14px 12px 0;padding:17px 15px;overflow:hidden;border:1px solid #253e4a;border-radius:11px;background:radial-gradient(circle at 50% -35%,#254864 0,transparent 62%),linear-gradient(115deg,#091724 0%,#0d1d2c 56%,#07111c 100%);box-shadow:inset 0 0 25px #0007,0 6px 16px #0003}
+.race-feature:before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,#ffffff08,transparent 45%),repeating-linear-gradient(155deg,transparent 0 29px,#ffffff05 30px 31px);pointer-events:none}
+.race-feature-glow{position:absolute;width:220px;height:120px;left:30%;top:-83px;border-radius:50%;background:#5e9ed066;filter:blur(35px)}
+.race-hero-trophy{position:absolute;width:118px;height:118px;right:55px;bottom:-17px;opacity:.32;transform:rotate(-10deg);filter:drop-shadow(0 4px 10px #0009)}
+.race-feature-copy{position:relative;z-index:1;display:grid;gap:3px;min-width:0;padding-right:80px}
+.race-feature-label{color:#bfcada;font-size:12px;font-weight:800;letter-spacing:.06em;white-space:nowrap}
+.race-feature-label em{margin-left:4px;color:#87bba6;font-size:8px;font-style:normal;vertical-align:2px}
+.race-feature-copy>strong{color:#ffcd3a;font-size:31px;font-weight:900;letter-spacing:-.03em;line-height:1.12;white-space:nowrap;text-shadow:0 2px 7px #ffba2250}
+.race-feature-subtitle{color:#c4d0dc;font-size:12px;font-weight:700;white-space:nowrap}
+.race-feature-subtitle b{color:#fff}
+.race-feature-clock{position:absolute;z-index:2;right:12px;top:50%;transform:translateY(-50%);display:grid;place-content:center;width:83px;height:83px;text-align:center;color:#fff}
+.race-feature-clock svg{position:absolute;inset:0;width:100%;height:100%;transform:rotate(-90deg)}
+.race-feature-clock circle{fill:none;stroke-width:5}
+.race-clock-track{stroke:#354453}
+.race-clock-progress{stroke:#36e267;stroke-linecap:round;stroke-dasharray:196 270}
+.race-feature-clock span{position:relative;color:#cbd5df;font-size:9px;font-weight:700}
+.race-feature-clock strong{position:relative;margin-top:2px;font-size:12px;font-weight:900;letter-spacing:.01em}
+.race-page>.race-view-tabs{margin:9px 12px 0}
+.race-page>.race-view-tabs button{min-height:43px}
+.race-feature+.race-view-tabs+.race-content{padding-top:12px}
+@media(max-width:360px){.race-feature{margin-inline:9px;padding-inline:11px;min-height:142px}.race-feature-copy{padding-right:74px}.race-feature-copy>strong{font-size:27px}.race-feature-subtitle{font-size:10px}.race-feature-clock{right:8px;width:74px;height:74px}.race-feature-clock strong{font-size:10px}.race-page>.race-view-tabs{margin-inline:9px}}
